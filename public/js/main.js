@@ -17,6 +17,11 @@ async function init() {
     const ofVersion = document.querySelector('#of-version');
     ofVersion.innerText = await fin.System.getVersion();
 
+    const launchBtn = document.querySelector('#launch-random');
+    launchBtn.addEventListener('click', async () => {
+        await fin.Application.start({name: `APP-DEV-${Date.now()}`, uuid: `APP-DEV-${Date.now()}`, url: location.href, autoShow:true})
+    })
+
     //Only launch new windows from the main window.
     if (win.identity.name === app.identity.uuid) {
         //subscribing to the run-requested events will allow us to react to secondary launches, clicking on the icon once the Application is running for example.
