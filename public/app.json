@@ -1,9 +1,9 @@
 {
     "startup_app": {
-        "name": "OpenfinPOC",
-        "url": "http://localhost:5555/index.html",
-        "uuid": "OpenfinPOC",
-        "applicationIcon": "http://localhost:5555/favicon.ico",
+        "name": "Launch-With-Random-UUID",
+        "url": "https://adam-saland.github.io/launch-with-random-uuid/public/index.html",
+        "uuid": "Launch-With-Random-UUID",
+        "applicationIcon": "https://adam-saland.github.io/launch-with-random-uuid/public/favicon.ico",
         "autoShow": true,
         "saveWindowState": true
     },
@@ -13,8 +13,8 @@
     },
     "shortcut": {
         "company": "OpenFin",
-        "description": "Openfin POC",
+        "description": "Launch an application with a random UUID",
         "icon": "http://localhost:5555/favicon.ico",
-        "name": "Openfin POC"
+        "name": "Launch Random UUID"
     }
 }
